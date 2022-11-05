@@ -12,11 +12,11 @@ beta = 0.1
 mo = 0.02
 
 # Initial conditions
-s = 1
-e = 0.001
-i = 0.002
-r = 0.001
-p = 0.002
+s = 0.99
+e = 0.002
+i = 0.003
+r = 0.002
+p = 0.003
 
 # Fig.9 (a) paper
 days = 150
@@ -42,11 +42,11 @@ plt.legend(('S(t)','E(t)','I(t)','R(t)','P(t)'))
 days = 4000
 
 # Initial conditions
-s = 1
-e = 0.001
-i = 0.002
-r = 0.001
-p = 0.002
+s = 0.99
+e = 0.002
+i = 0.003
+r = 0.002
+p = 0.003
 
 t, s, e, i, r, p = ODE_solver(alpha_e, alpha_i, gamma, kappa, ro, beta, mo, s, e, i, r, p, days)
 
@@ -71,11 +71,11 @@ plt.legend(('S(t)','E(t)','I(t)','R(t)','P(t)'))
 days = 4000
 
 # Initial conditions
-s = 1
-e = 0.001
-i = 0.002
-r = 0.001
-p = 0.002
+s = 0.99
+e = 0.002
+i = 0.003
+r = 0.002
+p = 0.003
 
 t, s, e, i, r, p = ODE_solver(alpha_e, alpha_i, gamma, kappa, ro, beta, mo, s, e, i, r, p, days)
 
